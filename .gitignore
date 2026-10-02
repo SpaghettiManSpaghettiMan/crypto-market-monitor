@@ -1,0 +1,36 @@
+# Credentials and secrets
+config/keys.json
+config/keys_LIVE.json
+config/keysTEST.json
+config/webhooks.json
+config/webhook_url.txt
+secrets/
+.env
+*.secret
+
+# Runtime data
+logs/
+data/*
+!data/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.json.tmp
+
+# Generated scanner output
+data/watchlist.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

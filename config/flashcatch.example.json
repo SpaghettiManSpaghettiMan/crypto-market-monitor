@@ -1,0 +1,30 @@
+{
+  "_comment": "FlashCatch config for ZECUSD \u2014 high volatility, deep crashes, fast bounces",
+  "pair": "ZECUSD",
+  "kraken_pair": "ZECUSD",
+  "display_name": "ZEC",
+  "total_budget": 500.0,
+  "budget_floor": 15.0,
+  "crash_trigger_pct": 12.0,
+  "crash_window_candles": 8,
+  "rsi_oversold": 32,
+  "volume_multiplier": 2.0,
+  "toe_pct": 0.15,
+  "layer_pct": 0.2,
+  "entry_signal": "hammer",
+  "target_retracement": 0.6,
+  "stop_buffer_pct": 0.02,
+  "max_hold_hours": 48,
+  "poll_interval_secs": 300,
+  "alert_interval_secs": 300,
+  "discord": {
+    "webhook_name": "flashcatch",
+    "_comment": "Resolved via config/webhooks.json"
+  },
+  "data": {
+    "state_file": "data/flash_state.json",
+    "db_file": "data/flashcatch_ZECUSD_candles.db"
+  },
+  "active_pairs_count": 7,
+  "live_trading_enabled": false
+}

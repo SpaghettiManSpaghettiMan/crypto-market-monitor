@@ -1,0 +1,14 @@
+{
+  "swingtrader": {
+    "url": "PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "interval_minutes": 45
+  },
+  "flashcatch": {
+    "url": "PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "interval_minutes": 45
+  },
+  "sentinel_btc": {
+    "url": "PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "interval_minutes": 60
+  }
+}

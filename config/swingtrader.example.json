@@ -1,0 +1,26 @@
+{
+  "_comment": "SwingTrader configuration. Edit here \u2014 no code changes needed.",
+  "budget": {
+    "max_budget_usd": 490.0
+  },
+  "timing": {
+    "poll_interval_secs": 180,
+    "discord_status_interval_mins": 45,
+    "order_expiry_secs": 1800,
+    "sell_limit_secs": 180,
+    "reentry_cooldown_mins": 60,
+    "sideways_days": 3.0,
+    "rsi_exhaustion_cooldown_hrs": 24,
+    "rsi_exhaustion_rsi_threshold": 72,
+    "trend_mode_rsi_exhaustion_threshold": 80
+  },
+  "discord": {
+    "webhook_name": "swingtrader",
+    "_comment": "Resolved via config/webhooks.json \u2014 actual URL never lives here"
+  },
+  "keys": {
+    "keys_file": "keys.json",
+    "_comment": "Filename only \u2014 file lives in config/"
+  },
+  "live_trading_enabled": false
+}

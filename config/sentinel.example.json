@@ -1,0 +1,23 @@
+{
+  "_comment": "SentinelHODL BTC macro-cycle signal configuration.",
+  "pair": "BTCUSD",
+  "kraken_pair": "XXBTZUSD",
+  "display_name": "BTC",
+  "budget_usd": 100.0,
+  "timing": {
+    "poll_interval_secs": 3600,
+    "discord_every_n": 1
+  },
+  "discord": {
+    "webhook_name": "sentinel_btc",
+    "_comment": "Resolved via config/webhooks.json"
+  },
+  "keys": {
+    "keys_file": "keys.json"
+  },
+  "data": {
+    "state_file": "data/sentinel_state.json",
+    "db_file": "data/sentinel_candles.db",
+    "events_csv": "data/event_log/sentinel_events.csv"
+  }
+}

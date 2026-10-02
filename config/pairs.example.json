@@ -1,0 +1,70 @@
+{
+  "_comment": "Active pairs and per-pair config for SWINGTRADER.",
+
+  "active_pairs": [
+    "BCHUSD",
+    "BNBUSD",
+    "ETHUSD",
+    "LTCUSD",
+    "SOLUSD",
+    "XRPUSD",
+    "ZECUSD"
+  ],
+
+  "pairs": {
+    "BCHUSD": {
+      "kraken_pair": "BCHUSD",
+      "trigger_pct": 0.005,
+      "entry_overrides": {
+        "_note": "BCH: moderately high ATR. Wider stop ceiling allows moves to breathe.",
+        "ts_pct_max": 0.10
+      }
+    },
+
+    "BNBUSD": {
+      "kraken_pair": "BNBUSD",
+      "trigger_pct": 0.005
+    },
+
+    "ETHUSD": {
+      "kraken_pair": "ETHUSD",
+      "trigger_pct": 0.005
+    },
+
+    "LTCUSD": {
+      "kraken_pair": "LTCUSD",
+      "trigger_pct": 0.005
+    },
+
+    "SOLUSD": {
+      "kraken_pair": "SOLUSD",
+      "trigger_pct": 0.005,
+      "entry_overrides": {
+        "_note": "SOL: wins at 4h RSI 65-68 + daily 66-72. Losses at 4h ~48 + daily ~40. High ATR — wider stop ceiling.",
+        "4h_rsi_min": 55,
+        "daily_rsi_min": 50,
+        "ts_pct_max": 0.10
+      }
+    },
+
+    "XRPUSD": {
+      "kraken_pair": "XRPUSD",
+      "trigger_pct": 0.005,
+      "entry_overrides": {
+        "_note": "XRP: losses when daily RSI < 45. Stable pair — default 8% cap is fine.",
+        "daily_rsi_min": 45
+      }
+    },
+
+    "ZECUSD": {
+      "kraken_pair": "ZECUSD",
+      "trigger_pct": 0.005,
+      "entry_overrides": {
+        "_note": "ZEC: very high ATR (8-10%+). Wide stop floor+ceiling prevents shakeouts on normal volatility. Strong MACD required.",
+        "4h_macd_hist_min": 2.0,
+        "ts_pct_min": 0.08,
+        "ts_pct_max": 0.12
+      }
+    }
+  }
+}
